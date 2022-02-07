@@ -1,0 +1,4 @@
+{
+    "mongoURI":"mongodb+srv://jisooyu:EdfcDygdcYrsebA7@yu-web.fbm0a.mongodb.net/yu-contact-keeper?retryWrites=true&w=majority",
+    "jwtSecret":"secretjsonwebtoken"
+}
