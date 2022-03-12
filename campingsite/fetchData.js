@@ -1,12 +1,11 @@
 const axios = require('axios');
-const key = require('../config/serviceKey');
-const url = require('../config/url');
 
 const fetchData = async () => {
+  let serviceKey = decodeURIComponent(process.env.SERVICE_KEY);
   try {
-    return await axios.get(url.goCampingUrl, {
+    return await axios.get(process.env.GO_CAMPING_URL, {
       params: {
-        ServiceKey: key.serviceKey,
+        ServiceKey: serviceKey,
         numOfRows: '10',
         pageNo: '1',
         MobileOS: 'ETC',
